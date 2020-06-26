@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="128.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="viewTab" text="Просмотр">
+            <content>
+              <AnchorPane fx:id="viewPage" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="pane" layoutX="47.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="reBtn" layoutX="615.0" layoutY="211.0" mnemonicParsing="false" text="Обновить" />
+                           </children></Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="addTab" text="Добавление">
+            <content>
+              <AnchorPane fx:id="addPage" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="addBtn" layoutX="316.0" layoutY="395.0" mnemonicParsing="false" text="Добавить" />
+                        <TextField fx:id="nameField" layoutX="276.0" layoutY="116.0" />
+                        <TextField fx:id="surnameField" layoutX="276.0" layoutY="173.0" />
+                        <TextField fx:id="streetField" layoutX="276.0" layoutY="236.0" />
+                        <TextField fx:id="numField" layoutX="276.0" layoutY="301.0" />
+                        <Label layoutX="338.0" layoutY="89.0" text="Имя" />
+                        <Label layoutX="326.0" layoutY="150.0" text="Фамилия" />
+                        <Label layoutX="333.0" layoutY="206.0" text="Улица" />
+                        <Label layoutX="317.0" layoutY="274.0" text="Номер дома" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="updateTab" text="Редактирование">
+              <content>
+                <AnchorPane fx:id="updatePage" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="338.0" layoutY="108.0" text="Имя" />
+                        <Label layoutX="325.0" layoutY="168.0" text="Фамилия" />
+                        <Label layoutX="334.0" layoutY="227.0" text="Улица" />
+                        <Label layoutX="316.0" layoutY="289.0" text="Номер дома" />
+                        <Label layoutX="258.0" layoutY="56.0" text="ID" />
+                        <TextField fx:id="idField" layoutX="293.0" layoutY="52.0" />
+                        <TextField fx:id="nameField1" layoutX="276.0" layoutY="132.0" />
+                        <TextField fx:id="surnameField1" layoutX="276.0" layoutY="194.0" />
+                        <TextField fx:id="streetField1" layoutX="277.0" layoutY="254.0" />
+                        <TextField fx:id="numField1" layoutX="277.0" layoutY="314.0" />
+                        <Button fx:id="updateBtn" layoutX="317.0" layoutY="390.0" mnemonicParsing="false" text="Изменить" />
+                        <Label layoutX="264.0" layoutY="26.0" text="Введите номер нужной записи:" />
+                        <Label layoutX="285.0" layoutY="85.0" text="Введите новые данные:" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="deleteTab" text="Удаление">
+              <content>
+                <AnchorPane fx:id="deletePage" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="276.0" layoutY="155.0" text="Введите ID нужной записи:" />
+                        <TextField fx:id="deleteField" layoutX="276.0" layoutY="201.0" />
+                        <Button fx:id="deleteBtn" layoutX="320.0" layoutY="259.0" mnemonicParsing="false" text="Удалить" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
